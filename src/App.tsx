@@ -63,6 +63,10 @@ function App() {
         </button>
       </header>
 
+      <div className='welcome-banner'>
+        <h2>Hello, World!</h2>
+      </div>
+
       <main className='app-main'>
         {showCart ? (
           <Cart
