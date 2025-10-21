@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { products, type Product } from './data/products';
 import ProductList from './components/ProductList';
 import Cart from './components/Cart';
+import Header from './components/Header';
 import './App.css';
 
 interface CartItem {
@@ -56,12 +57,10 @@ function App() {
 
   return (
     <div className='app'>
-      <header className='app-header'>
-        <h1>Shirt Store</h1>
-        <button className='cart-toggle' onClick={() => setShowCart(!showCart)}>
-          Cart ({cartItemCount})
-        </button>
-      </header>
+      <Header
+        cartItemCount={cartItemCount}
+        onCartToggle={() => setShowCart(!showCart)}
+      />
 
       <main className='app-main'>
         {showCart ? (
