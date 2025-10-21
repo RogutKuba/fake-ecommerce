@@ -56,6 +56,9 @@ function App() {
 
   return (
     <div className='app'>
+      <div className='hello-world-header'>
+        <h2>Hello, World!</h2>
+      </div>
       <header className='app-header'>
         <h1>Shirt Store</h1>
         <button className='cart-toggle' onClick={() => setShowCart(!showCart)}>

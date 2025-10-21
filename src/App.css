@@ -22,6 +22,21 @@ body {
   flex-direction: column;
 }
 
+.hello-world-header {
+  background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hello-world-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  margin: 0;
+}
+
 .app-header {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
@@ -376,10 +391,18 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .hello-world-header {
+    padding: 0.75rem 1rem;
+  }
+
+  .hello-world-header h2 {
+    font-size: 1.25rem;
+  }
+
   .app-header {
     padding: 1rem;
   }
-  
+
   .app-header h1 {
     font-size: 1.5rem;
   }
